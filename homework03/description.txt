@@ -1,0 +1,19 @@
+Implemented a parallelized Sparse Matrix-Vector Multiplication(using openMP) and a conversion from COO to CSR.
+
+Implemented Functions:
+
+    a) convert_coo_to_csr(row_ind, col_ind, val, m, n, nnz, &csr_row_ptr, &csr_col_ind, &csr_vals);
+
+    b) spmv(csr_row_ptr, csr_col_ind, csr_vals, m, n, nnz, vector_x, res);
+
+TESTING:
+(There is two different test directories: test1/ and test2/)
+
+    a) A.mtx is the sparse matrix.
+
+    b) x.mtx is the vector that you are multiplying the matrix with (i.e., A * x)
+
+    c) ans.mtx is the answer to A*x. 
+
+    <output> of the ./spmv <sparse matrix> <vector> <output> should be identical to ans.mtx.
+
