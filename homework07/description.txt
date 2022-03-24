@@ -1,0 +1,18 @@
+Goal for this project is to implement the following:
+
+    a) a binary search tree (BST) using C++ classes and composition, and
+
+    b) a simple database that stores student information using inheritance
+
+REQUIREMENTS:
+
+    a) The student ID should be the base class's key member.
+
+    b) The student ID should be automatically assigned such that the ID/key should be n if the student is the nth student to join the school. If the student later leaves (i.e., deleted from the BST), the ID does NOT get reassigned to another student. Thus, the student ID of the last student to join the school should reflect the TOTAL number of students that have joined this school since its reception (regardless of whether some have left).
+
+TESTING:
+
+    a) The provided answer for the BST unit test is in "unittest_ans_t100_s100.txt". The s100 refers to the seed of 100 (-s 100), and t100 refers to the number of elements to add to the BST (-t 100).
+
+    b) The provided answer for the DB is in "students_1_ans.txt" for the "students_1.txt" input file.
+
